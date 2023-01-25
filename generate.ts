@@ -107,11 +107,8 @@ function nestDefaultValue(a:ValueNode|undefined):string {
      */
   if (a==undefined) return ""
   switch(a.kind) {
-    case "ListValue"   :
-      return `[${argumentList(a.values,nestDefaultValue)}]`
-    case "ObjectValue" :
-      return `{${a.fields.map(f=>
-        `${f.name.value}:${nestDefaultValue(f.value)}`)}}`
+    case "ListValue"   : return `[${argumentList(a.values,nestDefaultValue)}]`
+    case "ObjectValue" : return `{${a.fields.map(f=> `${f.name.value}:${nestDefaultValue(f.value)}`)}}`
     case "IntValue"    :
     case "FloatValue"  :
     case "BooleanValue": return a.value.toString()
