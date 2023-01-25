@@ -72,7 +72,7 @@ if(errors) console.log(errors[0])
 
 console.log("Augmenting schema")
 
-const typeMap=(s:string)=>({
+const typeMap=(s:string):string=>({
   "String":"string"
 
 })[s]||s
