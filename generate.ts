@@ -70,7 +70,7 @@ const vc = new ValidationContext(
 errors = validate(schema, ast, undefined, typeinfo)
 if(errors) console.log(errors[0])
 
-console.log("augment")
+console.log("Augmenting schema")
 
 const typeMap=(s:string)=>({
   "String":"string"
