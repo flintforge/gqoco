@@ -1,0 +1,28 @@
+* gqoco
+** a simple GraphQL code generator (to TS)
+
+0: Some graphQL code generator are so convoluted
+that you need to install the entire npm repository
+and configure options in their own file definition
+(one day JS, the next one yaml, TS on the third,
+and docs gets out of sync in between...) just to
+get a single line of code out a GraphQL file.
+
+Reason is, people are lazy, and their lazyness
+drags other lazy coders into this vortex, this
+creates mass, that in turns starts to drag the
+non-lazy ones into it.
+
+Inside of the vortex, a LOT of effort are put for
+the sole reason that "the community will get
+stronger" (meaning: to get out of this deepshit,
+we promise).  The achived effect is called the
+"stadium effect": the added collective effort to
+*find* a reasonable solution is superior to the
+provided benefits by the people whirling and
+yelling helps and support in the vortex, for the
+sole reason that the first is plain waste (finding
+where we are when lost) and the second, as I said,
+so convoluted that it twists into a
+vortex. This way. goto 0.
+
