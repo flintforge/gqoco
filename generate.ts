@@ -85,7 +85,6 @@ const scalars:Array<string> = [],
       }
 
 
-
 function argumentList<T>(a: ReadonlyArray<T>, fn:(v:T)=>string ):string {
   // turns an array into it's string-coma-separated-list representation
   return a.map((v:T)=>fn(v)).join(", ")
@@ -123,7 +122,6 @@ function nestDefaultValue(a:ValueNode|undefined):string {
   }
 }
 
-// https://graphql.org/graphql-js/language/#visitor
 
 const interfaceObject=(node:ObjectTypeDefinitionNode):string=>
   node.description ?`// ${node.description.value}\n`:''
