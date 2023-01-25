@@ -77,7 +77,7 @@ const typeMap=(s:string)=>({
 
 })[s]||s
 
-
+// storage for the examinated types
 const scalars:Array<string> = [],
       enums:Dict<Array<string>> = {},
       directiveMap = {
@@ -194,7 +194,6 @@ type ReturnTypeByInputType = {
   bool: boolean
 }
 
-
 interface INodeProcessor {
   process(node:ASTNode):string
 }
@@ -214,7 +213,6 @@ class ObjectTypeDefinitionProcessor extends NodeProcessor {
     return "ok"
   }
 }
-
 
 schema.getQueryType()?.astNode?.fields?.map(f=>process(f))
 
